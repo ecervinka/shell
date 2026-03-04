@@ -69,7 +69,8 @@ rm ../raw/*ipaddr*
 rm user_logs/*ipaddr*
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-touch data/inventory.txt
+cd ..  
+touch inventory.txt
 ls processed/server_logs > inventory.txt
 ls processed/user_logs >> inventory.txt
 ls processed/event_logs >> inventory.txt
